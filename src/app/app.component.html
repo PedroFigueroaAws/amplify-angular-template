@@ -4,8 +4,13 @@
     let-user="user"
     let-signOut="signOut"
   >
-  <h1>Hello {{user?.signInDetails?.loginId}}'s todos</h1>
+  <h1>Los ToDo de {{user?.signInDetails?.loginId}}</h1>
     <app-todos></app-todos>
-    <button (click)="signOut()">Sign Out</button>
+    <button (click)="signOut()">Salir</button>
+
+  <h1>Los riesgos de {{user?.signInDetails?.loginId}}</h1>
+    <app-risks></app-risks>
+    <button (click)="signOut()">Salir</button>
   </ng-template>
+
 </amplify-authenticator>

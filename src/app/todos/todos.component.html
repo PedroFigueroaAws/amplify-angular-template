@@ -1,7 +1,7 @@
 <!-- todos.component.html -->
 <main>
-    <h1>My todos</h1>
-    <button (click)="createTodo()">+ new</button>
+    <h1>Mis ToDo</h1>
+    <button (click)="createTodo()">Nuevo ToDo</button>
     <ul>
         <li 
             *ngFor="let todo of todos;" (click)="deleteTodo(todo.id)">
@@ -9,10 +9,7 @@
         </li>
     </ul>
     <div>
-        🥳 App successfully hosted. Try creating a new todo.
+        🥳 Esta App es una demostración de amplify y angular
         <br />
-        <a href="https://docs.amplify.aws/gen2/start/quickstart/">
-            Review next steps of this tutorial.
-        </a>
     </div>
 </main>
