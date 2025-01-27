@@ -1,0 +1,11 @@
+<!-- risk.component.html -->
+<main>
+    <h1>Mis Riesgos</h1>
+    <button (click)="createRisk()">Nuevo riesgo</button>
+    <ul>
+        <li 
+            *ngFor="let risk of risks;" (click)="deleteRisk(risk.id)">
+            {{ risk.description }} - {{ risk.status }}
+        </li>
+    </ul>
+</main>
